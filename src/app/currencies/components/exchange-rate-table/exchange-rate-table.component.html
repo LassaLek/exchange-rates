@@ -1,8 +1,11 @@
 <table>
   <tr>
-    <th>Currency: <div (click)="reorder()">⬍</div></th>
-    <th>Buy: </th>
-    <th>Sell: </th>
+    <th
+      (click)="reorder()">
+      Currency: ⬍
+    </th>
+    <th>Buy:</th>
+    <th>Sell:</th>
   </tr>
   <tr
     *ngFor="let key of exchangeRatesData.currencies"

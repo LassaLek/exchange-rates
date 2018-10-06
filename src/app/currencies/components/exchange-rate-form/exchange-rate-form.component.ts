@@ -1,20 +1,20 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { CurrenciesService } from '../currencies.service';
+import { CurrenciesService } from '../../services/currencies.service';
+import { ExchangeRateFormModel } from '../../models/exchange-rate-form.model';
+import { CurrenciesConfig } from '../../currencies.config';
 
 @Component({
   selector: 'app-exchange-rate-form',
   templateUrl: './exchange-rate-form.component.html',
   styleUrls: ['./exchange-rate-form.component.css']
 })
-export class ExchangeRateFormComponent implements OnInit {
+export class ExchangeRateFormComponent {
 
-  // TODO model
-  @Output() onFormSubmit = new EventEmitter<any>();
+  @Output() onFormSubmit = new EventEmitter<ExchangeRateFormModel>();
 
   public today = CurrenciesService.getToday();
-  public start = '2015-01-01';
-
+  public start = CurrenciesConfig.START_DATA;
   public availableCurrencies: string[] = CurrenciesService.getBaseCurrencies().sort();
 
   public exchangeRatesForm = new FormGroup({
@@ -22,13 +22,7 @@ export class ExchangeRateFormComponent implements OnInit {
     date: new FormControl(this.today),
   });
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-  onSubmit() {
-    console.warn(this.exchangeRatesForm.value);
+  onSubmit(): void {
     this.onFormSubmit.emit(this.exchangeRatesForm.value);
   }
 

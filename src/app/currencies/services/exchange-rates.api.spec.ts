@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
+import { ExchangeRatesApi } from './exchange-rates.api';
 
-import { CurrenciesApiService } from './currencies-api.service';
 
 describe('ExchangeRatesApi', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [CurrenciesApiService]
+      providers: [ExchangeRatesApi]
     });
   });
 
-  it('should be created', inject([CurrenciesApiService], (service: CurrenciesApiService) => {
+  it('should be created', inject([ExchangeRatesApi], (service: ExchangeRatesApi) => {
     expect(service).toBeTruthy();
   }));
 });

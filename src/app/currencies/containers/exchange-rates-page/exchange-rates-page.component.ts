@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrenciesService } from '../../currencies.service';
+import { CurrenciesService } from '../../services/currencies.service';
 import { Observable } from 'rxjs/index';
 
 @Component({

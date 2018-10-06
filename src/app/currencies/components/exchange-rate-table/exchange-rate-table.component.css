@@ -1,0 +1,26 @@
+.highlighted {
+  color: red;
+  font-weight: bold;
+}
+
+tr {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+
+}
+
+th {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}

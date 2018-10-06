@@ -1,14 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { CurrenciesConfig } from '../currencies.config';
 
 @Pipe({
   name: 'toBuyRate'
 })
 export class ToBuyRatePipe implements PipeTransform {
-
-  private simpleBuy = 0.95;
-
-  transform(value: any, args?: any): any {
-    return value * this.simpleBuy;
+  transform(value: number): number {
+    return value * CurrenciesConfig.BUY_RATE;
   }
-
 }

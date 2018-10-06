@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ExchangeRatesPageComponent } from './containers/exchange-rates-page/exchange-rates-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ExchangeRateFormComponent } from './exchange-rate-form/exchange-rate-form.component';
-import { ExchangeRateTableComponent } from './exchange-rate-table/exchange-rate-table.component';
+import { ExchangeRateFormComponent } from './components/exchange-rate-form/exchange-rate-form.component';
+import { ExchangeRateTableComponent } from './components/exchange-rate-table/exchange-rate-table.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TrimDecimalPipe } from './trim-decimal.pipe';
-import { ToSellRatePipe } from './to-sell-rate.pipe';
-import { ToBuyRatePipe } from './to-buy-rate.pipe';
+import { TrimDecimalPipe } from './pipes/trim-decimal.pipe';
+import { ToSellRatePipe } from './pipes/to-sell-rate.pipe';
+import { ToBuyRatePipe } from './pipes/to-buy-rate.pipe';
 
 const currenciesRoutes: Routes = [
   {

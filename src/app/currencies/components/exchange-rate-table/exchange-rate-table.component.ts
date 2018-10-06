@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CurrenciesService } from '../currencies.service';
+import { CurrenciesService } from '../../services/currencies.service';
+import { ExchangeRatesModel } from '../../models/exchange-rates.model';
 
 @Component({
   selector: 'app-exchange-rate-table',
@@ -7,7 +8,7 @@ import { CurrenciesService } from '../currencies.service';
   styleUrls: ['./exchange-rate-table.component.css']
 })
 export class ExchangeRateTableComponent implements OnInit {
-  @Input() public exchangeRatesData: any = {
+  @Input() public exchangeRatesData: ExchangeRatesModel = {
     rates: {},
     currencies: []
   };
