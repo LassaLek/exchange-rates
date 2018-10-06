@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Currency: <div (click)="reorder()">⬍</div></th>
+    <th>Buy: </th>
+    <th>Sell: </th>
+  </tr>
+  <tr
+    *ngFor="let key of exchangeRatesData.currencies"
+    [ngClass]="{'highlighted': isHighlighted(key)}">
+    <td>{{ key }}</td>
+    <td>{{ exchangeRatesData.rates[key] | toBuyRate | trimDecimal}}</td>
+    <td>{{ exchangeRatesData.rates[key] | toSellRate | trimDecimal}}</td>
+  </tr>
+</table>

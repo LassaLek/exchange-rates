@@ -1,0 +1,17 @@
+<form [formGroup]="exchangeRatesForm" (ngSubmit)="onSubmit()">
+
+<div>
+  <label for="currency">Currency: </label>
+  <select id="currency" formControlName="currency">
+    <option *ngFor="let curr of availableCurrencies" value="{{ curr }}" >{{ curr }}</option>
+  </select>
+</div>
+
+<div>
+  <label for="date">Date: </label>
+  <input formControlName="date" type="date" id="date" name="trip"
+         min="{{start}}" max="{{today}}"/>
+</div>
+<button type="submit">Submit</button>
+
+</form>
