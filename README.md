@@ -5,6 +5,7 @@
 Run `npm run serve` for a dev server. Runs with a proxy because of CORS. Navigate to `http://localhost:4200/`.
 
 ## Running unit tests
+# TESTS NOT WORKING YET
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
