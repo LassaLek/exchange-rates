@@ -9,6 +9,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { TrimDecimalPipe } from './pipes/trim-decimal.pipe';
 import { ToSellRatePipe } from './pipes/to-sell-rate.pipe';
 import { ToBuyRatePipe } from './pipes/to-buy-rate.pipe';
+import { SharedModule } from '../shared/shared.module';
 
 const currenciesRoutes: Routes = [
   {
@@ -26,6 +27,7 @@ const currenciesRoutes: Routes = [
     CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
+    SharedModule,
     RouterModule.forChild(currenciesRoutes)
   ],
   declarations: [

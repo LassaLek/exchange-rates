@@ -1,11 +1,13 @@
 # Barclays
 
 ## Development server
-
-Run `npm run serve` for a dev server. Runs with a proxy because of CORS. Navigate to `http://localhost:4200/`.
+Run `npm install` to install all dependencies.
+Run `npm run serve` for a dev server. 
+Runs with a proxy because of CORS. 
+Navigate to `http://localhost:4200/`.
 
 ## Running unit tests
-# TESTS NOT WORKING YET
+## TESTS NOT ALL WORKING YET
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
