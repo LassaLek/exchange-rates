@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { ExchangeRatesPageComponent } from './containers/exchange-rates-page/exchange-rates-page.component';
+import { ExchangeRatesPageComponent } from './containers/exchange-rate-page/exchange-rate-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ExchangeRateFormComponent } from './components/exchange-rate-form/exchange-rate-form.component';
 import { ExchangeRateTableComponent } from './components/exchange-rate-table/exchange-rate-table.component';

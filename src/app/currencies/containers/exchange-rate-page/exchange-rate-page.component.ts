@@ -3,9 +3,9 @@ import { CurrenciesService } from '../../services/currencies.service';
 import { Observable } from 'rxjs/index';
 
 @Component({
-  selector: 'app-exchange-rates-page',
-  templateUrl: './exchange-rates-page.component.html',
-  styleUrls: ['./exchange-rates-page.component.css']
+  selector: 'app-exchange-rate-page',
+  templateUrl: './exchange-rate-page.component.html',
+  styleUrls: ['./exchange-rate-page.component.css']
 })
 export class ExchangeRatesPageComponent implements OnInit {
 
